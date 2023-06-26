@@ -10,3 +10,13 @@ const config = {
 };
 
 new Phaser.Game(config);
+
+const windowSize = document.querySelector(".window-size");
+const width = document.createElement("p");
+const height = document.createElement("p");
+
+width.textContent = window.innerWidth;
+height.textContent = window.innerHeight;
+
+windowSize.appendChild(width);
+windowSize.appendChild(height);
